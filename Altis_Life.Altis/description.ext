@@ -1,11 +1,11 @@
 disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
 unsafeCVL = 1; // Allows createVehicleLocal to be executed in Multiplayer
-
 #include "config\Config_SpyGlass.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "rezlind\rezlind_master.cpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -25,6 +25,7 @@ class RscTitles {
 
 class CfgFunctions {
     #include "Functions.hpp"
+	#include "rezlind\rezlind_functions_master.cpp"
 };
 
 class CfgSounds {
@@ -96,8 +97,8 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
-
-    class SpyGlass {
+	
+	class SpyGlass {
         title = "$STR_SpyDetect_Title";
         subTitle = "$STR_SpyDetect_SubTitle";
         description = "$STR_SpyDetect_Descript";
