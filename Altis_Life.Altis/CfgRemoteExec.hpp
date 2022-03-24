@@ -15,6 +15,7 @@ class CfgRemoteExec {
     class Functions {
         mode = 1;
         jip = 0;
+        #include "rezlind\rezlind_remoteExec.cpp"
 
         /* Client only functions */
         F(life_fnc_AAN,CLIENT)
