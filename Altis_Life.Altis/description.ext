@@ -6,6 +6,7 @@ unsafeCVL = 1; // Allows createVehicleLocal to be executed in Multiplayer
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "rezlind\rezlind_config_base.cpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -21,6 +22,7 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+    #include "rezlind\rezlind_functions_base.cpp"
 };
 
 class CfgFunctions {
